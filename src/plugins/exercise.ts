@@ -62,6 +62,14 @@ export class ExerciseNode extends ElementNode {
   static getAllowedChildTypes(): Array<string> {
     return ['exercise', 'solution']
   }
+
+  canInsertTextAfter(): boolean {
+    return false
+  }
+
+  canInsertTextBefore(): boolean {
+    return false
+  }
 }
 
 export class TaskNode extends ElementNode {
@@ -102,6 +110,14 @@ export class TaskNode extends ElementNode {
   createParentElementNode(): ElementNode {
     return new ExerciseNode()
   }
+
+  canInsertTextAfter(): boolean {
+    return false
+  }
+
+  canInsertTextBefore(): boolean {
+    return false
+  }
 }
 
 export class SolutionNode extends ElementNode {
@@ -133,6 +149,14 @@ export class SolutionNode extends ElementNode {
       type: 'solution',
       version: 1,
     }
+  }
+
+  canInsertTextAfter(): boolean {
+    return false
+  }
+
+  canInsertTextBefore(): boolean {
+    return false
   }
 
   isParentRequired(): boolean {
