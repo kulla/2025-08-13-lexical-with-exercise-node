@@ -7,7 +7,7 @@ export default defineConfig({
     title: 'Lexical Editor Experiment',
   },
   output: {
-    assetPrefix: '/2025-08-05-lexical-editor-experiment/',
+    assetPrefix: '/2025-08-13-lexical-with-exercise-node/',
   },
   plugins: [
     pluginReact(),
