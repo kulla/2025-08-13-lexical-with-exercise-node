@@ -55,14 +55,6 @@ export class ExerciseNode extends ElementNode {
     return false
   }
 
-  static childrenCanBeElements(): boolean {
-    return true
-  }
-
-  static getAllowedChildTypes(): Array<string> {
-    return ['exercise', 'solution']
-  }
-
   canInsertTextAfter(): boolean {
     return false
   }
