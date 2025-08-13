@@ -94,6 +94,14 @@ export class TaskNode extends ElementNode {
       version: 1,
     }
   }
+
+  isParentRequired(): boolean {
+    return true
+  }
+
+  createParentElementNode(): ElementNode {
+    return new ExerciseNode()
+  }
 }
 
 export class SolutionNode extends ElementNode {
@@ -125,6 +133,14 @@ export class SolutionNode extends ElementNode {
       type: 'solution',
       version: 1,
     }
+  }
+
+  isParentRequired(): boolean {
+    return true
+  }
+
+  createParentElementNode(): ElementNode {
+    return new ExerciseNode()
   }
 }
 
