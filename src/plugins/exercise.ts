@@ -1,10 +1,10 @@
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import {
-  ElementNode,
-  type SerializedElementNode,
-  type LexicalEditor,
   $createParagraphNode,
   $createTextNode,
+  ElementNode,
+  type LexicalEditor,
+  type SerializedElementNode,
 } from 'lexical'
 import { $getSelectedTopLevelNode } from './utils'
 
